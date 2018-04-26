@@ -1,0 +1,23 @@
+version: '3'
+services:
+  node_one:
+    image: vidsyhq/go-base
+    volumes:
+      - ./output/go-build-containers:/usr/local/bin/go-build-containers
+    command: go-build-containers
+  node_two:
+    image: vidsyhq/go-base
+    volumes:
+      - ./output/go-build-containers:/usr/local/bin/go-build-containers
+    command: go-build-containers
+  node_three:
+    image: vidsyhq/go-base
+    volumes:
+      - ./output/go-build-containers:/usr/local/bin/go-build-containers
+    command: go-build-containers
+  node_four:
+    image: vidsyhq/go-base
+    volumes:
+      - ./output/go-build-containers:/usr/local/bin/go-build-containers
+    command: go-build-containers
+
